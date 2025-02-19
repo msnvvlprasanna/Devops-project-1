@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prasanna-app
+  labels:
+    app: prasanna-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prasanna-app
+  template:
+    metadata:
+      labels:
+        app: prasanna-app
+    spec:
+      containers:
+      - name: pandacloud-container
+        image: 222634394492.dkr.ecr.us-east-1.amazonaws.com/amazon-prime
+        ports:
+        - containerPort: 3000
+...
