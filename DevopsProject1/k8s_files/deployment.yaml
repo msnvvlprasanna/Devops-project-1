@@ -16,7 +16,7 @@ spec:
         app: prasanna-app
     spec:
       containers:
-      - name: pandacloud-container
+      - name: prasanna-container
         image: 222634394492.dkr.ecr.us-east-1.amazonaws.com/amazon-prime
         ports:
         - containerPort: 3000
